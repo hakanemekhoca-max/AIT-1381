@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10213b">
+<title>AIT-1381 | Tanıtım Demosu</title>
+<style>
+:root{--navy:#10213b;--blue:#2857a4;--teal:#13b8a6;--ink:#17243a;--muted:#617089;--paper:#f4f7fb;--white:#fff;--line:#e1e8f0}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(125deg,#10213b,#214e88);color:white;padding:22px max(20px,calc((100% - 1100px)/2))}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.3px;font-size:1.15rem}.pill{border:1px solid #ffffff70;border-radius:999px;padding:5px 12px;font-size:.83rem}
+main{max-width:1100px;margin:auto;padding:28px 20px 48px}.hero{display:grid;grid-template-columns:1.35fr .85fr;gap:24px;align-items:stretch}
+.panel,.card{background:white;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 26px #19365c0b}
+.hero-copy{padding:clamp(24px,4vw,42px);background:white;border:1px solid var(--line);border-radius:20px}
+.eyebrow{color:#137d78;font-weight:750;font-size:.82rem;text-transform:uppercase;letter-spacing:1.2px}
+h1{font-size:clamp(2rem,4.4vw,3.35rem);line-height:1.08;margin:12px 0 18px;color:var(--navy)}h2{font-size:1.35rem;margin:0 0 12px;color:var(--navy)}p{margin:0 0 14px}.muted{color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{border:0;border-radius:12px;padding:11px 16px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--blue);color:white}.secondary{background:#eaf1fb;color:var(--blue)}
+.demo-box{padding:24px;background:linear-gradient(150deg,#e5f8f6,#eef3ff);display:flex;flex-direction:column;justify-content:space-between;min-height:260px}.demo-icon{font-size:2.2rem}.demo-box ul{padding-left:20px;margin:10px 0}.notice{margin-top:18px;padding:13px 15px;border-left:4px solid var(--teal);background:#e8f8f5;border-radius:8px;font-size:.92rem}
+.section-title{margin:34px 0 14px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:21px}.card .icon{font-size:1.55rem;margin-bottom:8px}.card p{color:var(--muted);font-size:.94rem}
+.quiz{margin-top:28px;padding:24px}.question{font-weight:700;margin:8px 0 12px}.option{display:block;width:100%;text-align:left;background:white;border:1px solid var(--line);padding:12px 14px;border-radius:12px;margin:8px 0;cursor:pointer;font:inherit}.option:hover{border-color:var(--blue);background:#f5f8ff}.option:disabled{cursor:default}.feedback{font-weight:700;margin-top:12px;min-height:1.5em}.progress{margin-top:12px;color:var(--muted);font-size:.9rem}
+footer{border-top:1px solid var(--line);padding:22px 20px;text-align:center;color:var(--muted);font-size:.85rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.demo-box{min-height:unset}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="brand">AIT-1381 <span style="font-weight:500">| Öğrenme Platformu</span></div><span class="pill">TANITIM DEMOSU · Bağımsız sürüm</span></div></header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Öğrenme yolculuğuna hoş geldin</div>
+    <h1>Öğren. Uygula.<br>İlerle.</h1>
+    <p>AIT-1381'in tanıtım demosunu keşfet. Öğrenme alanlarını incele, örnek bir soruyu yanıtla ve arayüzün nasıl çalıştığını dene.</p>
+    <p class="muted">Bu sürüm bir tanıtım prototipidir; gerçek öğrenci hesabı veya kurumsal entegrasyon içermez.</p>
+    <div class="actions"><a class="btn primary" href="#ornek-soru">Örnek soruyu dene</a><a class="btn secondary" href="#alanlar">Demo alanlarını keşfet</a></div>
+    <div class="notice"><strong>Gizlilik notu:</strong> Bu demoda ad, telefon, e-posta veya başka kişisel bilgi girmen istenmez. Örnek soru sonucu yalnızca bu tarayıcıda tutulur; merkezi öğretmen paneline gönderilmez.</div>
+  </div>
+  <aside class="panel demo-box">
+    <div><div class="demo-icon">🎓</div><h2>Demo kontrol paneli</h2><p>Bu örnek arayüzde şunları deneyebilirsin:</p><ul><li>Öğrenme alanlarını görüntüleme</li><li>Örnek soruyu yanıtlama</li><li>Bu cihazdaki demo durumunu görme</li></ul></div>
+    <div><span class="pill" style="background:white;color:#2857a4;border-color:#d7e4f6">Hesap gerektirmez</span></div>
+  </aside>
+</section>
+<section id="alanlar">
+  <div class="section-title"><div class="eyebrow">Keşfet</div><h2>Öğrenme alanları</h2><p class="muted">Aşağıdaki kartlar tanıtım amaçlı örnek içeriktir.</p></div>
+  <div class="grid">
+    <article class="card"><div class="icon">📘</div><h2>Konu anlatımı</h2><p>Konu başlıklarını düzenli bir akışta incelemeye yönelik örnek alan.</p></article>
+    <article class="card"><div class="icon">🧩</div><h2>Uygulama soruları</h2><p>Öğrendiklerini örnek sorularla kontrol etmeye yönelik demo alanı.</p></article>
+    <article class="card"><div class="icon">📈</div><h2>İlerleme özeti</h2><p>Bu cihazda yanıtlanan örnek soru sayısını gösteren yerel demo göstergesi.</p></article>
+  </div>
+</section>
+<section id="ornek-soru" class="panel quiz">
+  <div class="eyebrow">Etkileşimli örnek</div><h2>Örnek soru</h2>
+  <p>Bir öğrenci 4 soruluk bir mini testin 3 sorusunu doğru yanıtlıyor. Doğru yanıt oranı yüzde kaçtır?</p>
+  <div class="question">Bir seçenek belirle:</div>
+  <button class="option" data-correct="false">A) %25</button>
+  <button class="option" data-correct="false">B) %50</button>
+  <button class="option" data-correct="true">C) %75</button>
+  <button class="option" data-correct="false">D) %80</button>
+  <div id="feedback" class="feedback" aria-live="polite"></div>
+  <div id="progress" class="progress">Bu cihazdaki demo denemeleri: 0</div>
+  <button id="reset" class="btn secondary" type="button">Demo sayacını sıfırla</button>
+</section>
+</main>
+<footer>AIT-1381 Tanıtım Demosu · Bağımsız prototip · Gerçek öğrenci verisi toplamaz</footer>
+<script>
+(() => {
+  const key = "ait1381_demo_attempts_v1";
+  const feedback = document.getElementById("feedback");
+  const progress = document.getElementById("progress");
+  const readCount = () => {
+    try { return Number(localStorage.getItem(key) || 0); } catch (_) { return 0; }
+  };
+  const writeCount = n => {
+    try { localStorage.setItem(key, String(n)); } catch (_) {}
+    progress.textContent = "Bu cihazdaki demo denemeleri: " + n;
+  };
+  writeCount(readCount());
+  document.querySelectorAll(".option").forEach(button => {
+    button.addEventListener("click", () => {
+      const count = readCount() + 1;
+      writeCount(count);
+      document.querySelectorAll(".option").forEach(b => b.disabled = true);
+      if (button.dataset.correct === "true") {
+        feedback.textContent = "Doğru! 3 ÷ 4 × 100 = %75.";
+        feedback.style.color = "#137d55";
+      } else {
+        feedback.textContent = "Bu seçenek doğru değil. Doğru yanıt %75; çünkü 3 ÷ 4 × 100 = 75.";
+        feedback.style.color = "#a33b35";
+      }
+    });
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    writeCount(0);
+    feedback.textContent = "";
+    document.querySelectorAll(".option").forEach(b => b.disabled = false);
+  });
+})();
+</script>
+</body>
+</html>
